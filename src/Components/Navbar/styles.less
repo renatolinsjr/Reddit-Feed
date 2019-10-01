@@ -1,0 +1,20 @@
+@import './../../assets/mixins.less';
+
+div {
+    &.header {
+        height: 80px;
+        background: @cinzaEscuro;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 25px;
+            color: @branco;
+        }
+        span {
+            color: @laranjaEscuro;
+        }
+    }
+}

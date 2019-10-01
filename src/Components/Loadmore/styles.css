@@ -1,0 +1,22 @@
+div.btn {
+  width: 100%;
+  padding: 0;
+}
+div.btn button.loadmore {
+  height: 40px;
+  width: 100%;
+  margin-right: 5px;
+  background: #666;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  outline: none;
+}
+div.btn button.loadmore.ativo {
+  background: #ec5105;
+}
+div.btn button.loadmore:last-child {
+  margin-right: 0;
+}

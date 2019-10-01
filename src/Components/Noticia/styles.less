@@ -1,0 +1,56 @@
+@import './../../assets/mixins.less';
+
+div {
+    &.thumb {
+        height: 64px;
+        width: 64px;
+        background: @cinzaClaro;
+        display: inline-block;
+    }
+    &.noticia {
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        margin-left: 10px;
+        span, a, p, h1 {
+            margin: 0;
+        }
+        h1 {
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        span, a, p {
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        a {
+            &.usuario {
+                color: @laranjaEscuro;
+            }
+            &.dominio {
+                color: @defaultTextColor;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+li {
+    margin: 10px 0;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+    &:last-child {
+        padding-bottom: 0;
+        border: none;
+    }
+}

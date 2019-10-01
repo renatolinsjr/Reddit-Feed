@@ -1,0 +1,28 @@
+@import './../../assets/mixins.less';
+
+div {
+    &.btn {
+        width: 100%;
+        padding: 0;
+        button {
+            &.loadmore {
+                height: 40px;
+                width: 100%;
+                margin-right: 5px;
+                background: @cinzaClaro;
+                border: none;
+                border-radius: 7px;
+                color: @branco;
+                font-family: Helvetica, sans-serif;
+                font-size: 17px;
+                outline: none;
+                &.ativo {
+                    background: @laranjaEscuro;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

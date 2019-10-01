@@ -1,0 +1,16 @@
+div.header {
+  height: 80px;
+  background: #333;
+  display: flex;
+  align-items: center;
+}
+div.header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #fff;
+}
+div.header span {
+  color: #ec5105;
+}

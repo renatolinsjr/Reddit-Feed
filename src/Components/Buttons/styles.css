@@ -1,0 +1,21 @@
+div.btns {
+  margin-top: 15px;
+}
+div.btns button.tabs {
+  height: 40px;
+  width: 160px;
+  margin-right: 5px;
+  background: #666;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  outline: none;
+}
+div.btns button.tabs.ativo {
+  background: #ec5105;
+}
+div.btns button.tabs:last-child {
+  margin-right: 0;
+}
