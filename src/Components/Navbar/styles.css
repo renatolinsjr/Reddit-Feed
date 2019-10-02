@@ -3,6 +3,7 @@ div.header {
   background: #333;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 div.header h1 {
   font-family: Arial, Helvetica, sans-serif;

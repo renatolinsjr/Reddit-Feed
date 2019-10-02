@@ -20,3 +20,7 @@ div.btn button.loadmore.ativo {
 div.btn button.loadmore:last-child {
   margin-right: 0;
 }
+div.btn button.loadmore.loading {
+  background: #d9d9d9;
+  color: #fafafa;
+}

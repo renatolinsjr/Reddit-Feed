@@ -4,14 +4,14 @@ import Noticia from '../Noticia/Index';
 import './styles.css';
 const Lista = () => {
   return (
-    <div className="row">
-        <div className="col">
-            <div className="container">
-                <ul>
-                    <Noticia />
-                </ul>
-            </div>
-        </div>
+    <div className="container">
+		<div className="row">
+			<div className="col">
+				<ul>
+					<Noticia />
+				</ul>
+			</div>
+		</div>
     </div>
   );
 }

@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RedditContext } from '../../Contexts/RedditContext';
+
 import './styles.css';
 
 const Loadmore = () => {
-  return (
-    <div className="row">
-        <div className="col">
-            <div className="container">
-                <div className="btn">
-                    <button className="loadmore">Ver mais</button>
-                </div>
-            </div>
-        </div>
-    </div>
-  );
+	const { active, loadmore, page, isLoading } = useContext(RedditContext);
+
+	return (
+		<div className="container">
+			<div className="row">
+				<div className="col">
+					{ isLoading &&
+						<>
+							{ (page != null) &&
+								<div className="btn">
+									<button onClick={() => loadmore(active)} disabled className="loadmore loading">Carregando...</button>
+								</div>
+							}
+						</>
+					}
+					{ !isLoading &&
+						<>
+							{ (page != null) &&
+								<div className="btn">
+									<button onClick={() => loadmore(active)} className="loadmore">Ver mais</button>
+								</div>
+							}
+						</>
+					}
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default Loadmore;

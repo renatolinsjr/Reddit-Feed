@@ -35,13 +35,13 @@ div.content p {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
 }
-div.content a.usuario {
-  color: #ec5105;
-}
 div.content a.dominio {
   color: #000;
   font-weight: bold;
   text-decoration: underline;
+}
+div.content span.usuario {
+  color: #ec5105;
 }
 li {
   margin: 10px 0;
@@ -51,4 +51,12 @@ li {
 li:last-child {
   padding-bottom: 0;
   border: none;
+}
+li a.linkNoticia {
+  color: #000;
+  text-decoration: none;
+}
+li a:visited,
+li a:link {
+  text-decoration: none;
 }

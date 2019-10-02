@@ -33,13 +33,15 @@ div {
             font-size: 12px;
         }
         a {
-            &.usuario {
-                color: @laranjaEscuro;
-            }
             &.dominio {
                 color: @defaultTextColor;
                 font-weight: bold;
                 text-decoration: underline;
+            }
+        }
+        span {
+            &.usuario {
+                color: @laranjaEscuro;
             }
         }
     }
@@ -52,5 +54,15 @@ li {
     &:last-child {
         padding-bottom: 0;
         border: none;
+    }
+    a {
+        &.linkNoticia {
+            color: @defaultTextColor;
+            text-decoration: none;
+        }
+        &:visited,
+        &:link {
+            text-decoration: none;
+        }
     }
 }
