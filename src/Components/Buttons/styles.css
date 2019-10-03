@@ -2,6 +2,7 @@ div.btns {
   margin-top: 15px;
 }
 div.btns button.tabs {
+  margin-top: 15px;
   height: 40px;
   width: 160px;
   margin-right: 5px;
@@ -12,10 +13,19 @@ div.btns button.tabs {
   font-family: Helvetica, sans-serif;
   font-size: 17px;
   outline: none;
+  transition: background 0.25s ease-in-out;
 }
 div.btns button.tabs.ativo {
   background: #ec5105;
 }
-div.btns button.tabs:last-child {
-  margin-right: 0;
+div.btns button.tabs.ativo:hover {
+  background: #ec5105c7;
+}
+@media (max-width: 524px) {
+  div.btns button.tabs {
+    width: 100%;
+  }
+}
+div.btns button.tabs:hover {
+  background: #666666d6;
 }

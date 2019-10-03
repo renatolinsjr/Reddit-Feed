@@ -17,6 +17,7 @@ div {
                 font-family: Helvetica, sans-serif;
                 font-size: 17px;
                 outline: none;
+                transition: background 0.25s ease-in-out;
                 &.ativo {
                     background: @laranjaEscuro;
                 }
@@ -26,6 +27,9 @@ div {
                 &.loading {
                     background: #d9d9d9;
                     color: #fafafa;
+                }
+                &:hover {
+                    background: #666666d6;
                 }
             }
         }

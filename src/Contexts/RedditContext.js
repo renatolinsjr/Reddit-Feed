@@ -11,7 +11,7 @@ const RedditContextProvider = (props) => {
     const [rising, setRising] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [loadingBtn, setLoadingBtn] = useState(true);
-    const [active, setActive] = useState('news');
+    const [active, setActive] = useState('hot');
     const [page, setPage] = useState('');
 
     async function loadNew(){
@@ -19,7 +19,6 @@ const RedditContextProvider = (props) => {
             setIsLoading(true);
             const result = await api.getNew();
             setNews([result.data.data.children]);
-            console.log([result.data.data.children])
             setPage(result.data.data.after);
             setActive('news');
             setIsLoading(false);

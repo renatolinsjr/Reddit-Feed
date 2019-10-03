@@ -14,6 +14,7 @@ div.btn button.loadmore {
   font-family: Helvetica, sans-serif;
   font-size: 17px;
   outline: none;
+  transition: background 0.25s ease-in-out;
 }
 div.btn button.loadmore.ativo {
   background: #ec5105;
@@ -24,4 +25,7 @@ div.btn button.loadmore:last-child {
 div.btn button.loadmore.loading {
   background: #d9d9d9;
   color: #fafafa;
+}
+div.btn button.loadmore:hover {
+  background: #666666d6;
 }

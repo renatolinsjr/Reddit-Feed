@@ -12,14 +12,16 @@ const Lista = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col">
-					<ul>
-						{ !isLoading &&
+					{ !isLoading &&
+						<ul>
 							<Noticia />
-						}
-						{ isLoading &&
+						</ul>
+					}
+					{ isLoading &&
+						<ul>
 							<Loading />
-						}
-					</ul>
+						</ul>
+					}
 				</div>
 			</div>
 		</div>

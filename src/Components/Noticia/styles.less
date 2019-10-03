@@ -9,8 +9,9 @@ div {
     }
     &.noticia {
         display: flex;
+        align-items: center;
         img {
-            width: 100%;
+            width: 64px;
             height: 100%;
         }
     }
@@ -32,27 +33,27 @@ div {
             font-family: Helvetica, sans-serif;
             font-size: 12px;
         }
-        a {
+        span {
+            &.usuario {
+                color: @laranjaEscuro;
+            }
             &.dominio {
                 color: @defaultTextColor;
                 font-weight: bold;
                 text-decoration: underline;
             }
         }
-        span {
-            &.usuario {
-                color: @laranjaEscuro;
-            }
-        }
     }
 }
 
 li {
-    margin: 10px 0;
     border-bottom: 1px solid #707070;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    transition: background 0.1s ease-in-out;
+    &:hover {
+        background: #eee;
+    }
     &:last-child {
-        padding-bottom: 0;
         border: none;
     }
     a {

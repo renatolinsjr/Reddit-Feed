@@ -5,6 +5,7 @@ div {
         margin-top: 15px;
         button {
             &.tabs {
+                margin-top: 15px;
                 height: 40px;
                 width: 160px;
                 margin-right: 5px;
@@ -15,11 +16,18 @@ div {
                 font-family: Helvetica, sans-serif;
                 font-size: 17px;
                 outline: none;
+                transition: background 0.25s ease-in-out;
                 &.ativo {
                     background: @laranjaEscuro;
+                    &:hover {
+                        background: #ec5105c7;
+                    }
                 }
-                &:last-child {
-                    margin-right: 0;
+                @media (max-width: 524px) {
+                    width: 100%;
+                }
+                &:hover {
+                    background: #666666d6;
                 }
             }
         }
