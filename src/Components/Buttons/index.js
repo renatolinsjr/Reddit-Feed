@@ -13,23 +13,23 @@ export default function Buttons() {
 					<div className="btns">
 						{ active === 'hot'&&
 							<>
-								<button onClick={() => loadHot()} className="tabs ativo">HOT</button>
-								<button onClick={() => loadNew()} className="tabs">NEWS</button>
-								<button onClick={() => loadRising()} className="tabs">RISING</button>
+								<button onClick={() => loadHot()} className="tabs ativo" title="HOT">HOT</button>
+								<button onClick={() => loadNew()} className="tabs" title="NEWS">NEWS</button>
+								<button onClick={() => loadRising()} className="tabs" title="RISING">RISING</button>
 							</>
 						}
 						{ active === 'news'&&
 							<>
-								<button onClick={() => loadHot()} className="tabs">HOT</button>
-								<button onClick={() => loadNew()} className="tabs ativo">NEWS</button>
-								<button onClick={() => loadRising()} className="tabs">RISING</button>
+								<button onClick={() => loadHot()} className="tabs" title="HOT">HOT</button>
+								<button onClick={() => loadNew()} className="tabs ativo" title="NEWS">NEWS</button>
+								<button onClick={() => loadRising()} className="tabs" title="RISING">RISING</button>
 							</>
 						}
 						{ active === 'rising'&&
 							<>
-								<button onClick={() => loadHot()} className="tabs">HOT</button>
-								<button onClick={() => loadNew()} className="tabs">NEWS</button>
-								<button onClick={() => loadRising()} className="tabs ativo">RISING</button>
+								<button onClick={() => loadHot()} className="tabs" title="HOT">HOT</button>
+								<button onClick={() => loadNew()} className="tabs" title="NEWS">NEWS</button>
+								<button onClick={() => loadRising()} className="tabs ativo" title="RISING">RISING</button>
 							</>
 						}
 					</div>

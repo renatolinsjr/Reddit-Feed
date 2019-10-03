@@ -14,7 +14,7 @@ const Loadmore = () => {
 						<>
 							{ (page != null) &&
 								<div className="btn">
-									<button onClick={() => loadmore(active)} disabled className="loadmore loading">Carregando...</button>
+									<button onClick={() => loadmore(active)} disabled className="loadmore loading" title="Carregando">Carregando...</button>
 								</div>
 							}
 						</>
@@ -23,7 +23,7 @@ const Loadmore = () => {
 						<>
 							{ (page != null) &&
 								<div className="btn">
-									<button onClick={() => loadmore(active)} className="loadmore"><i className="fas fa-plus fa-xs"></i> Ver mais</button>
+									<button onClick={() => loadmore(active)} className="loadmore" title="Ver mais"><i className="fas fa-plus fa-xs"></i> Ver mais</button>
 								</div>
 							}
 						</>
