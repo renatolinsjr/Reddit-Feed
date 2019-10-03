@@ -17,6 +17,8 @@
 
 ## DEMO
 
+Link para ver o [App ao Vivo](https://reddit-feed-renato-lins.netlify.com)
+
 ![](https://i.ibb.co/XkGDqb1/reddit-feed-loading.jpg)
 ![](https://i.ibb.co/1bCS2Dk/reddit-feed.jpg)
 
