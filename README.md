@@ -21,10 +21,14 @@ Link para ver o [App ao Vivo](https://reddit-feed-renato-lins.netlify.com)
 
 ![](https://i.ibb.co/XkGDqb1/reddit-feed-loading.jpg)
 ![](https://i.ibb.co/1bCS2Dk/reddit-feed.jpg)
+![](https://i.ibb.co/VM3vMDZ/html-checker.jpg)
+![](https://i.ibb.co/QF0yyf4/nota.jpg)
 
 ## Como Funciona a Aplicação
 
 Clone do feed do Reddit utilizando a API deles para mostrar as Trendings New, Hot e Rising do [/r/reactJS](https://www.reddit.com/r/reactjs/)
+
+Aplicação com validação no W3C e otimizada pelo PageSpeed Insights
 
 ## Instalação
 
