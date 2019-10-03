@@ -1,5 +1,14 @@
 @import './../../assets/mixins.less';
 
+@font-face {
+    font-family: 'Font Awesome';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../assets/fonts/fa-solid-900.woff2");
+}
+
+@fontAwesome: 'Font Awesome', sans-serif;
+
 div {
     &.btn {
         width: 100%;
@@ -7,6 +16,7 @@ div {
         margin-bottom: 30px;
         button {
             &.loadmore {
+                cursor: pointer;
                 height: 40px;
                 width: 100%;
                 margin-right: 5px;
@@ -30,6 +40,13 @@ div {
                 }
                 &:hover {
                     background: #666666d6;
+                }
+                &.verMais {
+                    &:before {
+                        content: '\f067';
+                        font-family: @fontAwesome;
+                        font-size: 12px;
+                    }
                 }
             }
         }

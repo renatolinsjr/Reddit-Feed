@@ -23,7 +23,7 @@ const Loadmore = () => {
 						<>
 							{ (page != null) &&
 								<div className="btn">
-									<button onClick={() => loadmore(active)} className="loadmore" title="Ver mais"><i className="fas fa-plus fa-xs"></i> Ver mais</button>
+									<button onClick={() => loadmore(active)} className="loadmore verMais" title="Ver mais"><i className="fas fa-plus fa-xs"></i> Ver mais</button>
 								</div>
 							}
 						</>

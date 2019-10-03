@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'Font Awesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/fa-solid-900.woff2");
+}
 div.btn {
   width: 100%;
   padding: 0;
   margin-bottom: 30px;
 }
 div.btn button.loadmore {
+  cursor: pointer;
   height: 40px;
   width: 100%;
   margin-right: 5px;
@@ -28,4 +35,9 @@ div.btn button.loadmore.loading {
 }
 div.btn button.loadmore:hover {
   background: #666666d6;
+}
+div.btn button.loadmore.verMais:before {
+  content: '\f067';
+  font-family: 'Font Awesome', sans-serif;
+  font-size: 12px;
 }

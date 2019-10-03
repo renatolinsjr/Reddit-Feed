@@ -3,6 +3,7 @@ div.btns {
   margin-bottom: 15px;
 }
 div.btns button.tabs {
+  cursor: pointer;
   margin-top: 15px;
   height: 40px;
   width: 160px;
