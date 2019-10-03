@@ -4,13 +4,13 @@ import { RedditContext } from '../../Contexts/RedditContext';
 import './styles.css';
 
 const Loadmore = () => {
-	const { active, loadmore, page, isLoading } = useContext(RedditContext);
+	const { active, loadmore, page, loadingBtn } = useContext(RedditContext);
 
 	return (
 		<div className="container">
 			<div className="row">
 				<div className="col">
-					{ isLoading &&
+					{ loadingBtn &&
 						<>
 							{ (page != null) &&
 								<div className="btn">
@@ -19,7 +19,7 @@ const Loadmore = () => {
 							}
 						</>
 					}
-					{ !isLoading &&
+					{ !loadingBtn &&
 						<>
 							{ (page != null) &&
 								<div className="btn">

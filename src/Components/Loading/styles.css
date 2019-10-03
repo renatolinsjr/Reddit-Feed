@@ -1,0 +1,21 @@
+div.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+div.loadingContainer img {
+  width: 80px;
+  height: auto;
+}
+div.loadingContainer img.loading {
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

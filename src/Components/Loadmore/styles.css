@@ -1,6 +1,7 @@
 div.btn {
   width: 100%;
   padding: 0;
+  margin-bottom: 30px;
 }
 div.btn button.loadmore {
   height: 40px;

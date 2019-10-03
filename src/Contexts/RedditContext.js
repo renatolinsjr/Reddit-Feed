@@ -10,6 +10,7 @@ const RedditContextProvider = (props) => {
     const [hot, setHot] = useState([]);
     const [rising, setRising] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [loadingBtn, setLoadingBtn] = useState(true);
     const [active, setActive] = useState('news');
     const [page, setPage] = useState('');
 
@@ -22,8 +23,10 @@ const RedditContextProvider = (props) => {
             setPage(result.data.data.after);
             setActive('news');
             setIsLoading(false);
+            setLoadingBtn(false);
         } catch(err){
             setIsLoading(false);
+            setLoadingBtn(false);
             console.log(err);
         }
     }
@@ -36,8 +39,10 @@ const RedditContextProvider = (props) => {
             setPage(result.data.data.after);
             setActive('hot');
             setIsLoading(false);
+            setLoadingBtn(false);
         } catch(err){
             setIsLoading(false);
+            setLoadingBtn(false);
             console.log(err);
         }
     }
@@ -50,15 +55,17 @@ const RedditContextProvider = (props) => {
             setPage(result.data.data.after);
             setActive('rising');
             setIsLoading(false);
+            setLoadingBtn(false);
         } catch(err){
             setIsLoading(false);
+            setLoadingBtn(false);
             console.log(err);
         }
     }
 
     async function loadmore(active){
 		try {
-            setIsLoading(true);
+            setLoadingBtn(true);
             if (active === "news" && page != null) {
                 const result = await api.loadMoreNew(page);
                 setNews([...news, result.data.data.children]);
@@ -75,9 +82,9 @@ const RedditContextProvider = (props) => {
                 setPage(result.data.data.after);
                 setActive('rising');
             }
-            setIsLoading(false);
+            setLoadingBtn(false);
         } catch(err){
-            setIsLoading(false);
+            setLoadingBtn(false);
             console.log(err);
         }
     }
@@ -87,7 +94,7 @@ const RedditContextProvider = (props) => {
 	}, []);
 
     return (
-        <RedditContext.Provider value={{ isLoading, active, news, hot, rising, loadNew, loadHot, loadRising, loadmore, page }}>
+        <RedditContext.Provider value={{ isLoading, loadingBtn, active, news, hot, rising, loadNew, loadHot, loadRising, loadmore, page }}>
             {props.children}
         </RedditContext.Provider>
     );
